@@ -1,62 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>La Sin Nombre 2</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../Goodies/Bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesMain.css">
   </head>
 
 
   <body>
     <!-- Header -->
-    <header class="container-fluid" class="main_header">
-      <div class="row">
-        <div class="col-md-2">
-          <figure>
-            <img src="imgs/logoFace.png" alt="Logo Coaldera" class="img-circle">
-          </figure>
-        </div>
-        <div class="col-md-6">
-          <h1 class="text-center">Awesome Stuff</h1>
-        </div>
-        <div class="col-md-4">
-          <nav>
-            <ul>
-              <li><a href="imagery.html">imagery</a></li>
-              <li><a href="#">cool vids</a></li>
-              <li><a href="#">le contact</a></li>
-            </ul>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="main.html" class="navbar-left">
+              <img id="logo-img" src="imgs/logoFace2.png" alt="Logo image" class="img-circle">
+            </a>
 
-          </nav>
-        </div>
-      </div>
+            <div class="navbar-brand hidden-xs">
+              <a href="main.html">
+                <h1>Caldera</h1>
+              </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" id="btn-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!--#navlist-->
+          <div class="collapse navbar-collapse" id="collapsable-nav">
+            <ul class="nav navbar-nav navbar-right" id="nav-list">
+              <li><a href="#">videos</a></li>
+              <li><a href="photpgraphy.html">photography</a></li>
+              <li><a href="#">about</a></li>
+            </ul><!--#navlist-->
+          </div><!--.collapse #collapsable-nav-->
+        </div><!--.container-->
+      </nav>
     </header>
 
-    <!-- Main -->
-
-    <section class="container-fluid" id="main_section">
-      <div class="row">
-        <div class="col-md-12">
+    <!-- Jumbotron -->
+    <section class="jumbotron" id="sec-jum">
+      <div class="" id="filter-des">
+        <div id="sec-des">
           <h2 class="text-center">Andrés Caldera</h2>
-        </div>
-        <div class="col-md-6">
-          <figure>
-            <img src="imgs/mainPicture.png" alt="Picture of Andres" class="img-circle">
-          </figure>
-        </div>
-        <div class="col-md-6">
-          <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#section-main"><p class="text-center">Scroll down <br> <i class="fa fa-angle-double-down" aria-hidden="true"></i></p></a>
         </div>
       </div>
+
     </section>
 
+    <!-- Jumbotron -->
+    <section class="container-fluid" id="section-main">
+      <h2 class="text-center text-muted">Main Section</h2>
+    </section>
 
-
-
+    <!-- JavaScript -->
+    <script src="../../Goodies/jQuery/jquery-3.1.0.js"></script>
+    <script src="../../Goodies/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/373f426192.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
